@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D500301B17D68EA559C7E10 /* libPods-XJModuleProjectSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C2625B2358D63E6654E6C8 /* libPods-XJModuleProjectSDK.a */; };
 		AA58CF5D207F3DFC005D384A /* XJModuleProjectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA58CF53207F3DFB005D384A /* XJModuleProjectSDK.framework */; };
 		AA58CF62207F3DFC005D384A /* XJModuleProjectSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA58CF61207F3DFC005D384A /* XJModuleProjectSDKTests.m */; };
 		AA58CF64207F3DFC005D384A /* XJModuleProjectSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AA58CF56207F3DFB005D384A /* XJModuleProjectSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA58CF6F207F3F3C005D384A /* XJModuleConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA58CF6D207F3F3C005D384A /* XJModuleConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA58CF70207F3F3C005D384A /* XJModuleConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA58CF6E207F3F3C005D384A /* XJModuleConfigManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5432EC8F192CCA63788C1C88 /* Pods-XJModuleProjectSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJModuleProjectSDK.release.xcconfig"; path = "../Pods/Target Support Files/Pods-XJModuleProjectSDK/Pods-XJModuleProjectSDK.release.xcconfig"; sourceTree = "<group>"; };
 		AA58CF53207F3DFB005D384A /* XJModuleProjectSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XJModuleProjectSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA58CF56207F3DFB005D384A /* XJModuleProjectSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJModuleProjectSDK.h; sourceTree = "<group>"; };
 		AA58CF57207F3DFB005D384A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA58CF5C207F3DFC005D384A /* XJModuleProjectSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XJModuleProjectSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA58CF61207F3DFC005D384A /* XJModuleProjectSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJModuleProjectSDKTests.m; sourceTree = "<group>"; };
 		AA58CF63207F3DFC005D384A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA58CF6D207F3F3C005D384A /* XJModuleConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJModuleConfigManager.h; sourceTree = "<group>"; };
+		AA58CF6E207F3F3C005D384A /* XJModuleConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJModuleConfigManager.m; sourceTree = "<group>"; };
+		BEEC2DEC5F61A0FBFB5E68C2 /* Pods-XJModuleProjectSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJModuleProjectSDK.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-XJModuleProjectSDK/Pods-XJModuleProjectSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		D8C2625B2358D63E6654E6C8 /* libPods-XJModuleProjectSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XJModuleProjectSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D500301B17D68EA559C7E10 /* libPods-XJModuleProjectSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +59,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20B9E7E5F0D12E4E7153F6A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2DEC5F61A0FBFB5E68C2 /* Pods-XJModuleProjectSDK.debug.xcconfig */,
+				5432EC8F192CCA63788C1C88 /* Pods-XJModuleProjectSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E732411257C7EE905E7C514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C2625B2358D63E6654E6C8 /* libPods-XJModuleProjectSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA58CF49207F3DFB005D384A = {
 			isa = PBXGroup;
 			children = (
 				AA58CF55207F3DFB005D384A /* XJModuleProjectSDK */,
 				AA58CF60207F3DFC005D384A /* XJModuleProjectSDKTests */,
 				AA58CF54207F3DFB005D384A /* Products */,
+				20B9E7E5F0D12E4E7153F6A8 /* Pods */,
+				5E732411257C7EE905E7C514 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				AA58CF56207F3DFB005D384A /* XJModuleProjectSDK.h */,
+				AA58CF6D207F3F3C005D384A /* XJModuleConfigManager.h */,
+				AA58CF6E207F3F3C005D384A /* XJModuleConfigManager.m */,
 				AA58CF57207F3DFB005D384A /* Info.plist */,
 			);
 			path = XJModuleProjectSDK;
@@ -93,6 +123,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA58CF6F207F3F3C005D384A /* XJModuleConfigManager.h in Headers */,
 				AA58CF64207F3DFC005D384A /* XJModuleProjectSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,10 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA58CF67207F3DFC005D384A /* Build configuration list for PBXNativeTarget "XJModuleProjectSDK" */;
 			buildPhases = (
+				D73FB9B6EAA404FF806B5901 /* [CP] Check Pods Manifest.lock */,
 				AA58CF4E207F3DFB005D384A /* Sources */,
 				AA58CF4F207F3DFB005D384A /* Frameworks */,
 				AA58CF50207F3DFB005D384A /* Headers */,
 				AA58CF51207F3DFB005D384A /* Resources */,
+				915BE07A98C64441C7DED1D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,11 +223,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		915BE07A98C64441C7DED1D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-XJModuleProjectSDK/Pods-XJModuleProjectSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73FB9B6EAA404FF806B5901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA58CF4E207F3DFB005D384A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA58CF70207F3F3C005D384A /* XJModuleConfigManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +396,7 @@
 		};
 		AA58CF68207F3DFC005D384A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEEC2DEC5F61A0FBFB5E68C2 /* Pods-XJModuleProjectSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -348,6 +416,7 @@
 		};
 		AA58CF69207F3DFC005D384A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5432EC8F192CCA63788C1C88 /* Pods-XJModuleProjectSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
