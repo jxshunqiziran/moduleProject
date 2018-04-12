@@ -2,7 +2,7 @@
 //  XJModuleProjectSDKTests.m
 //  XJModuleProjectSDKTests
 //
-//  Created by 江鑫 on 2018/4/11.
+//  Created by 江鑫 on 2018/4/12.
 //  Copyright © 2018年 XJ. All rights reserved.
 //
 
